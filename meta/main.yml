@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: jetune
-  role_name: docker-swarm-master
+  role_name: docker_swarm_master
   description: Docker Swarm Master installation ansible role
   company: "Kube Cloud"
   issue_tracker_url: https://github.com/kube-cloud/ansible-role-docker-swarm-master.git
