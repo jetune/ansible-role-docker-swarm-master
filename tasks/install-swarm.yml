@@ -8,6 +8,13 @@
   ignore_errors: true
   run_once: true
 
+# Leave previous cluster if already member
+- name: "({{ os_with_version }}) SWARM-MASTER::INSTALL - Leave previous cluster if already member"
+  shell:
+   cmd: "docker swarm leave --force  1> /dev/null 2>&1"
+  ignore_errors: true
+  run_once: true
+
 # Initialize cluster if required
 - name: "({{ os_with_version }}) SWARM-MASTER::INSTALL - Initialize cluster if required"
   shell:
