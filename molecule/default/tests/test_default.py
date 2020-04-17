@@ -117,7 +117,7 @@ def test_swarm_installed(host):
     docker_command_path = '/usr/bin/docker'
 
     # Execute Compose command and get result
-    swarm_command_run = host.run(docker_command_path + ' docker swarm join-token --quiet worker')
+    swarm_command_run = host.run(docker_command_path + ' swarm join-token --quiet worker')
 
     # Assert that run is OK
     assert swarm_command_run.rc == 0
