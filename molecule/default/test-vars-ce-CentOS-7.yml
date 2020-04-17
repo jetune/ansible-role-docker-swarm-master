@@ -77,9 +77,6 @@ docker_swarm_advertise_ip: "127.0.0.1"
 # Docker swarm master advertise port
 docker_swarm_advertise_port: 2377
 
-# Docker swarm worker join token
-docker_swarm_worker_join_token: ""
-
 # Docker swarm extra options
 docker_swarm_extras_options:
  - "--availability active"
