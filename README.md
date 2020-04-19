@@ -7,7 +7,7 @@
 
 Ansible role used to install Docker Swarm (Engine/Compose implicitly) on Linux based Operating System.
 
-The rôle need docker engine role ([![jetune.docker]](https://github.com/kube-cloud/ansible-role-docker)) variables to correctly install docker engine before activate and configure swarm cluster (master)
+The rôle need docker engine role ([jetune.docker](https://github.com/kube-cloud/ansible-role-docker)) variables to correctly install docker engine before activate and configure swarm cluster (master)
 
 <a href="https://www.kube-cloud.com/"><img width="300" src="https://kube-cloud.com/images/branding/logo/kubecloud-logo-single_writing_horizontal_color_300x112px.png" /></a>
 <a href="https://www.redhat.com/fr/technologies/management/ansible"><img width="200" src="https://getvectorlogo.com/wp-content/uploads/2019/01/red-hat-ansible-vector-logo.png" /></a>
@@ -179,5 +179,14 @@ docker_swarm_post_install_script: "swarm-post-install.sh"
 docker_swarm_post_install_script_parameters:
  - "param1"
  - "param2"
+
+# Docker swarm node label
+docker_swarm_node_labels:
+ - key: "label_key_1"
+   value: "label_value_1"
+ - key: "label_key_2"
+   value: "label_value_2"
+ - key: "label_key_3"
+   value: "label_value_3"
 
 ```
